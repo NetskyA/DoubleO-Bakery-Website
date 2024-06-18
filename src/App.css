@@ -1,0 +1,195 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+.yanone-kaffeesatz-cover {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cover {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.images {
+  background-image: url(./assets/Image/backgroundlayout.png);
+}
+
+.images2 {
+  background-image: url(./assets/Image/backgroundlayout2.png);
+}
+
+/* .layout{
+  background: rgb(255,255,255);
+  background: linear-gradient(87deg, rgba(255,255,255,1) 0%, #f97316 68%, rgba(255,255,255,0.9699230033810399) 100%);
+} */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.1em solid black;
+  animation: typing 2s steps(10) infinite;
+}
+
+img.vert-move 
+    {
+        -webkit-animation: mover 0.8s infinite  alternate;
+     animation: mover 0.8s infinite  alternate;
+    }
+    img.vert-move {
+        -webkit-animation: mover 0.8s infinite  alternate;
+        animation: mover 0.8s infinite  alternate;
+    }
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+      animation: marquee 25s linear infinite;
+    }
+
+/* Scrollbar untuk Webkit (Chrome, Safari) */
+.transparent-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.transparent-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.transparent-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+
+/* Scrollbar untuk Firefox */
+.transparent-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(215, 215, 215, 0.719) transparent;
+}
+
+.transparent-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.transparent-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out infinite;
+}
+/* Tambahkan ini dalam file CSS Anda */
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+}
+
+
+.animate-typing2 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 2s steps(40, end) infinite, blink-caret .75s step-end infinite;
+}
+
+.animate-typing {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 2s steps(40, end) , blink-caret .75s step-end infinite;
+}
