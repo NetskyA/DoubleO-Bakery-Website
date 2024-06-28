@@ -10,6 +10,8 @@ import RewardPage from "./assets/Pages/Customer/RewardPage.jsx";
 import LocationPage from "./assets/Pages/Customer/LocationPage.jsx";
 import HotlinePage from "./assets/Pages/Customer/HotlinePage.jsx";
 
+
+//untuk routing pindah halaman (path harus sama dengan path di router)
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
       }, {
         path: "reward/page/doubleo/costumer",
         element: <RewardPage />
-      },{
+      }, {
         path: "hotline/page/doubleo/hotline",
         element: <HotlinePage />
       }, {
