@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Gif1 from "../../Image/ImageGif1.gif";
 import { Outlet, useNavigate } from "react-router-dom";
+
 export default function LoginRegpage() {
     let navigate = useNavigate()
     return (
