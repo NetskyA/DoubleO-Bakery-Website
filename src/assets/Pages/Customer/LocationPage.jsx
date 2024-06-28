@@ -1,6 +1,7 @@
 import NearbyOutletsMap from "../../FindMapping/NearbyOutletsMap";
 import { Carousel } from 'react-responsive-carousel';
 import { useState, useEffect } from 'react';
+import Arrowup from "../../Image/arrow-up.png";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import FooterPage from "../ComponentPage/Footer.jsx";
 
@@ -12,7 +13,9 @@ export default function ProfileCompany() {
     const [locationUser, setLocationUser] = useState(null);
     const [outlet, setOutlet] = useState(null);
     const [loading, setLoading] = useState(true);
-
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
@@ -81,7 +84,12 @@ export default function ProfileCompany() {
                     </div>
                 </section>
             )}
-
+            <button
+                onClick={scrollToTop}
+                className="fixed bottom-10 right-10 bg-primary text-white rounded-full p-3 shadow-lg hover:bg-blue-950 focus:outline-none"
+            >
+                <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
+            </button>
             <FooterPage />
         </>
     )

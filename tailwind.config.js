@@ -19,6 +19,7 @@ export default {
         sixth: '#efefef',
         seventh: '#bdbfba',
         eight: '#fdfdfd',
+        colortrs: '#ffffffce',
       },
       keyframes: {
         typing: {

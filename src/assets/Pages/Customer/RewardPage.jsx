@@ -1,8 +1,14 @@
 import backgroundGif from "../../Image/ImageGif.gif";
 import FooterPage from "../ComponentPage/Footer.jsx";
 import PhoneImage from "../../Image/PhoneMockup.png";
+import Arrowup from "../../Image/arrow-up.png";
+import { Outlet, useNavigate } from "react-router-dom";
 
 export default function RewardPage() {
+    let navigate = useNavigate();
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return (
         <>
             <div
@@ -25,9 +31,9 @@ export default function RewardPage() {
                             </p>
                             <div className="flex">
                                 <div className="rounded-md shadow-xl mt-10">
-                                    <a className="w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-gray-200 hover:text-primary focus:ring ring-offset-2 ring-pink-400 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                                    <a onClick={() => navigate("/login/user")} className="w-full flex items-center justify-center px-8 py-3 text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-gray-200 hover:text-primary focus:ring ring-offset-2 ring-pink-400 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                                         href="">
-                                        Login / Register
+                                        LOGIN to get your reward
                                     </a>
                                 </div>
                             </div>
@@ -50,7 +56,12 @@ export default function RewardPage() {
                     <h2 className="text-4xl font-bold">The Fourth slide</h2>
                 </div> */}
             </div>
-
+            <button
+                onClick={scrollToTop}
+                className="fixed bottom-10 right-10 bg-primary text-white rounded-full p-3 shadow-lg hover:bg-blue-950 focus:outline-none"
+            >
+                <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
+            </button>
             <FooterPage />
         </>
     )

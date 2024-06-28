@@ -6,6 +6,7 @@
 import backgroundGif from "../../Image/ImageGif2.gif";
 import ProductCook from "../../Image/Cookings.png";
 import FooterPage from "../ComponentPage/Footer.jsx";
+import Arrowup from "../../Image/arrow-up.png";
 import 'aos/dist/aos.css';
 // import { useEffect, useState } from "react";
 // import { motion, AnimatePresence } from 'framer-motion';
@@ -57,7 +58,9 @@ export default function AboutPage() {
     //         opacity: 0
     //     }
     // };
-
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return (
         <>
             {/* <div className="relative">
@@ -177,7 +180,12 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
-
+            <button
+                onClick={scrollToTop}
+                className="fixed bottom-10 right-10 bg-primary text-white rounded-full p-3 shadow-lg hover:bg-blue-950 focus:outline-none"
+            >
+                <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
+            </button>
             <FooterPage />
 
 

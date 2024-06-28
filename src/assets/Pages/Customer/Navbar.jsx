@@ -57,14 +57,14 @@ export default function Landingpage() {
                                 <li>
                                     <a href="/order/page/doubleo/outlet" onClick={() => navigate("/order/page/doubleo/outlet")} className="block py-2 px-3 font-semibold font-['Open_Sans'] text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-900 dark:hover:text-primary md:dark:hover:bg-transparent hover:underline hover:underline-offset-4 hover:decoration-primary transform transition-transform duration-500 hover:scale-100">Location</a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a href="/hotline/page/doubleo/hotline" onClick={() => navigate("/hotline/page/doubleo/hotline")} className="block py-2 px-3 font-semibold font-['Open_Sans'] text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-900 dark:hover:text-primary md:dark:hover:bg-transparent hover:underline hover:underline-offset-4 hover:decoration-primary transform transition-transform duration-500 hover:scale-100">Hotline</a>
-                                </li>
+                                </li> */}
                                 <li>
                                     <p className="hidden md:block text-2xl text-white">|</p>
                                 </li>
                                 <li>
-                                    <a href="/login" onClick={() => navigate("/login")} className="block py-2 px-3 font-semibold font-['Open_Sans'] text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-300 dark:hover:text-primary md:dark:hover:bg-transparent hover:underline hover:underline-offset-4 hover:decoration-primary transform transition-transform duration-500 hover:scale-100">Login</a>
+                                    <a href="/login/user" onClick={() => navigate("/login/user")} className="block py-2 px-3 font-semibold font-['Open_Sans'] text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-300 dark:hover:text-primary md:dark:hover:bg-transparent hover:underline hover:underline-offset-4 hover:decoration-primary transform transition-transform duration-500 hover:scale-100">Login</a>
                                 </li>
                             </ul>
                         </div>

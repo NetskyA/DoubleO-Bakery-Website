@@ -2,7 +2,7 @@ import Gif from "../../Image/ImageGif.gif";
 import Gif1 from "../../Image/ImageGif1.gif";
 import Gif2 from "../../Image/ImageGif2.gif";
 import Gif3 from "../../Image/ImageGif2.gif";
-import Banner from "../../Image/banner.png";
+// import Banner from "../../Image/banner.png";
 import ArrowDown from "../../Image/arrow-down.png";
 import LogoPromo from "../../Image/seemenu.png";
 import LogoBrand from "../../Image/icon/logo.png";
@@ -11,7 +11,7 @@ import Product2 from "../../Image/product/product2.jpg";
 import Product3 from "../../Image/product/product3.jpg";
 import Product4 from "../../Image/product/product4.jpg";
 import FooterPage from "../ComponentPage/Footer.jsx";
-
+import Arrowup from "../../Image/arrow-up.png";
 
 import Product5 from "../../Image/product/pac.jpg";
 import Product6 from "../../Image/product/yeast.jpg";
@@ -19,9 +19,10 @@ import Product7 from "../../Image/product/glaze.jpg";
 import Product8 from "../../Image/product/apple.jpg";
 import Product9 from "../../Image/product/boston.jpg";
 import Glide from "@glidejs/glide"
-import { Carousel } from 'react-responsive-carousel';
+// import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../.././index.css";
@@ -32,6 +33,7 @@ const backgroundGifs = [
 ];
 
 export default function MenuPage() {
+    let navigate = useNavigate()
     const [currentIndex, setCurrentIndex] = useState(0);
     const [fadeKey, setFadeKey] = useState(0);
     const texts = [
@@ -186,7 +188,9 @@ export default function MenuPage() {
         },
         // Add more product objects as needed
     ];
-
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     const [currentIndex1, setCurrentIndex1] = useState(0);
 
     const handlePrevClick = () => {
@@ -235,10 +239,10 @@ export default function MenuPage() {
 
             <div className="w-full h-32 bg-white">
                 <div className="relative ">
-                    <div className="sticky top-0 h-screen flex flex-col lg:flex-row bg-gradient-to-b from-white to-seventh" data-aos="fade-up">
+                    <div className=" top-0 h-screen flex flex-col lg:flex-row bg-gradient-to-b from-white to-seventh" data-aos="fade-up">
                         <div className="relative flex w-full lg:w-fit">
                             <img src={Product1} className="w-full lg:w-11/12 h-auto rounded-r-lg shadow-xl" alt="Product" />
-                            <img src={LogoPromo} alt="See menu" className="absolute right-0 top-1/2 -translate-y-1/2 w-32 lg:w-44 transform transition-transform duration-500 hover:scale-125 cursor-pointer" />
+                            <img src={LogoPromo} alt="See menu" onClick={() => navigate("/menu/cake")} className="absolute right-0 top-1/2 -translate-y-1/2 w-32 lg:w-44 transform transition-transform duration-500 hover:scale-125 cursor-pointer" />
                         </div>
                         <div className="w-full lg:w-2/4 pt-10 flex lg:pt-40 flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-up">
                             <h2 className="text-xl flex lg:text-2xl font-['Open_Sans'] text-blue-950 font-bold cursor-pointer">
@@ -261,7 +265,7 @@ export default function MenuPage() {
                     </div>
 
 
-                    <div className="sticky top-0 h-screen flex flex-col items-center justify-center bg-cover bg-no-repeat bg-center text-primary" data-aos="fade-up"
+                    <div className=" top-0 h-screen flex flex-col items-center justify-center bg-cover bg-no-repeat bg-center text-primary" data-aos="fade-up"
                         style={{ backgroundImage: `url(${Gif1})`, backgroundPosition: 'top' }}>
                         <div className="flex w-full">
                             <div className="w-1/2">
@@ -283,7 +287,7 @@ export default function MenuPage() {
                                             alt="Product 1"
                                         />
                                         <div className="absolute top-0 right-8 lg:right-0 mt-1 mr-1 lg:mt-2 lg:mr-2">
-                                            <img src={LogoPromo} alt="See Menu" className="w-28 lg:w-32 transform transition-transform duration-500 hover:scale-110 cursor-pointer" />
+                                            <img src={LogoPromo} onClick={() => navigate("/menu/bakery")} alt="See Menu" className="w-28 lg:w-32 transform transition-transform duration-500 hover:scale-110 cursor-pointer" />
                                         </div>
                                         <div className="flex">
                                             <p className="lg:mt-5 text-3xl lg:text-2xl mt-5 font-semibold text-white">American Heritage Chocolate</p>
@@ -296,7 +300,7 @@ export default function MenuPage() {
                                             alt="Product 2"
                                         />
                                         <div className="absolute top-0 right-8 lg:right-0 mt-1 mr-1 lg:mt-2 lg:mr-2">
-                                            <img src={LogoPromo} alt="See Menu" className="w-28 lg:w-32 transform transition-transform duration-500 hover:scale-110 cursor-pointer" />
+                                            <img src={LogoPromo} onClick={() => navigate("/menu/bakery")} alt="See Menu" className="w-28 lg:w-32 transform transition-transform duration-500 hover:scale-110 cursor-pointer" />
                                         </div>
                                         <div className="flex">
                                             <p className="lg:mt-5 text-3xl lg:text-2xl mt-5 font-semibold text-white">American Heritage Chocolate</p>
@@ -309,7 +313,7 @@ export default function MenuPage() {
                                             alt="Product 3"
                                         />
                                         <div className="absolute top-0 right-8 lg:right-0 mt-1 mr-1 lg:mt-2 lg:mr-2">
-                                            <img src={LogoPromo} alt="See Menu" className="w-28 lg:w-32 transform transition-transform duration-500 hover:scale-110 cursor-pointer" />
+                                            <img src={LogoPromo} onClick={() => navigate("/menu/bakery")} alt="See Menu" className="w-28 lg:w-32 transform transition-transform duration-500 hover:scale-110 cursor-pointer" />
                                         </div>
                                         <div className="flex">
                                             <p className="lg:mt-5 text-3xl lg:text-2xl mt-5 font-semibold text-white">American Heritage Chocolate</p>
@@ -322,7 +326,7 @@ export default function MenuPage() {
                                             alt="Product 4"
                                         />
                                         <div className="absolute top-0 right-8 lg:right-0 mt-1 mr-1 lg:mt-2 lg:mr-2">
-                                            <img src={LogoPromo} alt="See Menu" className="w-28 lg:w-32 transform transition-transform duration-500 hover:scale-110 cursor-pointer" />
+                                            <img src={LogoPromo} onClick={() => navigate("/menu/bakery")} alt="See Menu" className="w-28 lg:w-32 transform transition-transform duration-500 hover:scale-110 cursor-pointer" />
                                         </div>
                                         <div className="flex">
                                             <p className="lg:mt-5 text-3xl lg:text-2xl mt-5 font-semibold text-white">American Heritage Chocolate</p>
@@ -334,7 +338,7 @@ export default function MenuPage() {
 
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
                     </div>
-                    <div className="sticky top-0 h-screen flex-row items-center justify-center bg-primary" data-aos="fade-up">
+                    <div className=" top-0 h-screen flex-row items-center justify-center bg-primary">
                         <div className="flex h-40">
                             <div className="w-1/2 h-40 lg:w-full lg:h-48 shadow-2xl bg-black">
                                 <div className="top-0 left-0 p-4">
@@ -381,7 +385,7 @@ export default function MenuPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="sticky top-0 h-full flex flex-col items-center justify-center text-black" data-aos="fade-up">
+                    <div className=" top-0 h-full flex flex-col items-center justify-center text-black" data-aos="fade-up">
                         <div className="flex-row w-full justify-center overflow-hidden overflow-x-auto shadow-2xl bg-third">
                             <p className="text-5xl lg:text-8xl m-3 text-center lg:m-8 pt-5 lg:pt-0 font-semibold text-blue-950" data-aos="fade-right">
                                 Donut
@@ -590,6 +594,12 @@ export default function MenuPage() {
                         </div>
                         <FooterPage />
                     </div>
+                    <button
+                        onClick={scrollToTop}
+                        className="fixed bottom-10 right-10 bg-primary text-white rounded-full p-3 shadow-lg hover:bg-blue-950 focus:outline-none"
+                    >
+                        <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
+                    </button>
                 </div>
             </div>
 
