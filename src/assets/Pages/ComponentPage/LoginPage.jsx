@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Gif1 from "../../Image/ImageGif1.gif";
 import { Outlet, useNavigate } from "react-router-dom";
-export default function Registerpage() {
+export default function LoginRegpage() {
     let navigate = useNavigate()
     return (
         <>
@@ -15,10 +15,10 @@ export default function Registerpage() {
                 }}
             >
                 <div className="w-full justify-center items-center mx-auto p-8 lg:w-2/5">
-                    <div className="w-full mt-24 lg:mt-36 bg-white m-5 border-double border-4 border-primary rounded-tl-RoundedSF rounded-br-RoundedSF">
+                    <div className="w-full mt-24 lg:mt-36 bg-colortrs m-5 border-double border-4 border-primary rounded-tl-RoundedSF rounded-br-RoundedSF">
                         <div className="m-6">
                             <h2 className="text-2xl font-semibold text-gray-700 text-center pt-5">Double O Bakery</h2>
-                            <p className="text-lg text-gray-600 text-center">Create a new account</p>
+                            <p className="text-lg text-gray-600 text-center">Welcome back!</p>
                             {/* <a href="#" className="flex items-center justify-center mt-4 text-white border-gray-100 border-1 rounded-lg shadow-md hover:bg-gray-100">
                                 <div className="px-4 py-3">
                                     <svg className="h-6 w-6" viewBox="0 0 40 40">
@@ -52,27 +52,19 @@ export default function Registerpage() {
                                             <input autoComplete="off" id="username" name="username" type="text" className="peer rounded-xl border-2 border-gray-400 placeholder-transparent h-10 w-full text-gray-900 focus:outline-none focus:border-primary" placeholder="Username" />
                                             <label htmlFor="username" className="absolute left-0 ps-3 -top-5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-6 peer-focus:text-gray-600 peer-focus:text-sm">Username</label>
                                         </div>
-                                        <div className="relative pb-2">
+                                        <div className="relative">
                                             <input autoComplete="off" type="password" name="password" id="password" className="peer rounded-xl border-2 border-gray-400 placeholder-transparent h-10 w-full text-gray-900 focus:outline-none focus:border-primary" placeholder="Password" />
                                             <label htmlFor="password" className="absolute left-0 ps-3 -top-5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-6 peer-focus:text-gray-600 peer-focus:text-sm">Password</label>
-                                        </div>
-                                        <div className="relative pb-2">
-                                            <input autoComplete="off" type="text" name="numberphone" id="numberphone" className="peer rounded-xl border-2 border-gray-400 placeholder-transparent h-10 w-full text-gray-900 focus:outline-none focus:border-primary" placeholder="Password" />
-                                            <label htmlFor="number" className="absolute left-0 ps-3 -top-5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-6 peer-focus:text-gray-600 peer-focus:text-sm">Phone number</label>
-                                        </div>
-                                        <div className="relative mb-6">
-                                            <input autoComplete="off" id="email" name="email" type="email" className="peer rounded-xl border-2 border-gray-400 placeholder-transparent h-10 w-full text-gray-900 focus:outline-none focus:border-primary" placeholder="Email" />
-                                            <label htmlFor="email" className="absolute left-0 ps-3 -top-5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-6 peer-focus:text-gray-600 peer-focus:text-sm">Email</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div className="p pb-11">
-                                        <button onClick={() => navigate("/login/user")} className="text-white bg-seventh font-bold py-2 px-4 w-full rounded-xl hover:bg-gray-600">Register</button>
+                                    <div className="m" onClick={() => navigate("/login/user")}>
+                                        <button className="text-white bg-seventh font-bold py-2 px-4 w-full rounded-xl hover:bg-gray-600">Login</button>
                                     </div>
-                                    {/* <Link to="/login/user">
-                                        <h1 className="text-base underline font-semibold text-primary text-center pb-7 pt-5">Login</h1>
-                                    </Link> */}
+                                    <Link to="/register">
+                                        <h1 className="text-base underline font-semibold text-primary text-center pb-7 pt-5">Register</h1>
+                                    </Link>
                                 </div>
                             </form>
                         </div>
@@ -81,5 +73,4 @@ export default function Registerpage() {
             </div>
         </>
     )
-
 }

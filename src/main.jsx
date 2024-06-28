@@ -11,8 +11,8 @@ import AboutPage from "./assets/Pages/Customer/AboutPage.jsx";
 import RewardPage from "./assets/Pages/Customer/RewardPage.jsx";
 import LocationPage from "./assets/Pages/Customer/LocationPage.jsx";
 import HotlinePage from "./assets/Pages/Customer/HotlinePage.jsx";
-import LoginPage from "./assets/Pages/Customer/LoginPage.jsx";
-import Registerpage from "./assets/Pages/Customer/RegisterPage.jsx";
+import LoginPage from "./assets/Pages/ComponentPage/LoginPage.jsx";
+import Registerpage from "./assets/Pages/ComponentPage/RegisterPage.jsx";
 import Cakepage from "./assets/Pages/Admin/Katalog/Cake.jsx"
 import Bakerypage from "./assets/Pages/Admin/Katalog/Bakery.jsx";
 
