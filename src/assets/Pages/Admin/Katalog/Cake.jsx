@@ -9,12 +9,15 @@ import FooterPage from "../../ComponentPage/Footer";
 
 const ProductCard = ({ image, title, description, price }) => (
     <div className="flex items-center space-x-4 p-4 bg-white bg-opacity-75 rounded-lg shadow-lg">
-        <div className="w-24 h-24 flex-shrink-0">
-            <img src={image} alt={title} className="w-full h-full object-cover rounded-full" />
+        <div className="lg:h-40 lg:w-72 h-20 w-48 overflow-hidden rounded-tl-RoundedSF rounded-br-RoundedSF">
+            <img
+                src={image} alt={title}
+                className="w-full h-full object-cover transition-transform duration-500 transform hover:scale-110"
+            />
         </div>
         <div className="flex flex-col">
-            <h3 className="text-lg font-semibold">{title}</h3>
-            <p className="text-gray-600">{description}</p>
+            <h3 className="lg:text-lg text-lg font-semibold">{title}</h3>
+            <p className="text-gray-600 lg:text-lg text-xs">{description}</p>
             <p className="text-orange-500 font-bold">{price}</p>
         </div>
     </div>
@@ -176,14 +179,14 @@ export default function Cake() {
                 }}
             >
                 <div className="flex items-center w-full lg:w-4/5 mx-auto justify-center flex-col h-screen" data-aos="fade-up">
-                    <div className="bg-colortrs w-full h-full mt-8 mb-16 rounded-tl-RoundedSF2 rounded-br-RoundedSF2 relative">
-                        <div className="absolute inset-0 m-5 border-double border-4 border-primary rounded-tl-RoundedSF rounded-br-RoundedSF">
+                    <div className="bg-colortrs w-full h-full mb-14 rounded-tl-RoundedSF2 rounded-br-RoundedSF2 relative">
+                        <div className="absolute inset-0 m-3 border-double border-4 border-primary rounded-tl-RoundedSF2 rounded-br-RoundedSF2">
                             <div className="bannertext">
-                                <p className="text-center animate-typing text-blue-950 whitespace-nowrap border-r-4 border-r-gray-700 font-['Open_Sans'] justify-center items-center text-6xl p-10">
+                                <p className="text-center animate-typing text-blue-950 whitespace-nowrap border-r-4 border-r-gray-700 font-['Open_Sans'] justify-center items-center lg:text-6xl text-3xl p-10">
                                     POPULAR CAKE
                                 </p>
                             </div>
-                            <div className="w-full lg:w-4/5 mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="w-full lg:w-4/5 mx-auto lg:mt-5 mt-0 grid grid-cols-1 md:grid-cols-2 lg:gap-6 gap-2">
                                 {products.map((product, index) => (
                                     <ProductCard
                                         key={index}
@@ -195,7 +198,7 @@ export default function Cake() {
                                 ))}
                             </div>
                             <div className="flex justify-center items-center">
-                                <a href="#allcake" className="text-center underline cursor-pointer hover:text-primary text-blue-950 font-['Open_Sans'] text-lg p-10">
+                                <a href="#allcake" className="text-center underline cursor-pointer hover:text-primary text-blue-950 font-['Open_Sans'] text-lg p-5">
                                     see more
                                 </a>
                             </div>
@@ -228,6 +231,8 @@ export default function Cake() {
             >
                 <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
             </button>
+            <div className="covers bg-sixth h-32 lg:h-5 w-full">
+            </div>
             <FooterPage />
         </>
     )

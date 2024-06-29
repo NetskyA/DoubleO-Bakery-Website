@@ -98,96 +98,96 @@ export default function AboutPage() {
                 </button>
             </div> */}
 
-            <div
-                className="relative w-full h-96"
-                style={{ backgroundImage: `url(${backgroundGif})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-            >
-                <div className="flex h-full items-center justify-center">
-                    <div className="w-max">
-                        <h1 className="animate-typing font-['Open_Sans'] p-4 overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-8xl text-gray-200">Double O Bakery</h1>
-                        <p className="text-2xl text-center mt-2 text-gray-200">Sejak 2019</p>
+            <div className="cover bg-black">
+                <div
+                    className="relative w-full h-96"
+                    style={{ backgroundImage: `url(${backgroundGif})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                >
+                    <div className="flex h-full items-center justify-center">
+                        <div className="w-max">
+                            <h1 className="animate-typing font-['Open_Sans'] p-4 overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 lg:text-8xl text-5xl text-gray-200">Double O Bakery</h1>
+                            <p className="lg:text-2xl text-lg text-center mt-0 lg:mt-2 text-gray-200">Sejak 2019</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="flex flex-col lg:flex-row items-center justify-center bg-white py-10 px-4 lg:px-8">
-                <div className="relative flex-row w-full lg:w-1/2 justify-center items-center"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-duration="2000">
-                    <p className="text-4xl text-blue-950 text-center">
-                        We are a family-owned bakery
-                    </p>
-                    <p className="text-lg pt-5 text-blue-950 text-center">
-                        On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations.
-                    </p>
-                    <div className="flex items-center justify-center py-8">
-                        <div className="plate h-1 w-52 bg-seventh"></div>
+                <div className="flex flex-col lg:flex-row items-center justify-center bg-white py-10 px-4 lg:px-8">
+                    <div className="relative flex-row w-full lg:w-1/2 justify-center items-center"
+                        data-aos="fade-up">
+                        <p className="text-4xl text-blue-950 text-center">
+                            We are a family-owned bakery
+                        </p>
+                        <p className="text-lg pt-5 text-blue-950 text-center">
+                            On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations.
+                        </p>
+                        <div className="flex items-center justify-center py-8">
+                            <div className="plate h-1 w-52 bg-seventh"></div>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
 
-            <div className="flex flex-col lg:flex-row items-center justify-center mx-auto bg-white py-10 px-4 lg:px-20">
-                <div className="relative flex w-full lg:w-2/5 justify-center items-center">
-                    <img src={ProductCook} className="w-full h-96 shadow-xl object-cover" alt="Cake" />
+                <div className="flex flex-col lg:flex-row items-center justify-center mx-auto bg-white py-10 px-4 lg:px-20">
+                    <div className="relative flex w-full lg:w-2/5 justify-center items-center">
+                        <img src={ProductCook} className="w-full h-96 shadow-xl object-cover" alt="Cake" />
+                    </div>
+                    <div className="content w-full lg:w-1/2 h-96 flex flex-col bg-third items-center lg:items-start text-center lg:text-left justify-center bg-beige p-8 shadow-xl">
+                        <h2 className="text-4xl lg:text-5xl font-bold text-blue-950 mb-4">Masters at Work</h2>
+                        <p className="text-lg text-gray-700">
+                            On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations. On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations.
+                        </p>
+                    </div>
                 </div>
-                <div className="content w-full lg:w-1/2 h-96 flex flex-col bg-third items-center lg:items-start text-center lg:text-left justify-center bg-beige p-8 shadow-xl">
-                    <h2 className="text-4xl lg:text-5xl font-bold text-blue-950 mb-4">Masters at Work</h2>
-                    <p className="text-lg text-gray-700">
-                        On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations. On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations.
-                    </p>
-                </div>
-            </div>
 
-            <div className="flex flex-col lg:flex-row items-center justify-center bg-white py-10 px-4 lg:px-8">
-                <div className="relative flex-row w-full lg:w-1/2 justify-center items-center"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-duration="2000">
-                    <p className="text-2xl text-blue-950 text-left animate-typing font-['Open_Sans'] font-semibold overflow-hidden">Our Mission</p>
-                    <p className="text-4xl pt-3 text-blue-950 text-left">
-                        To bring expertly crafted baked and brewed goods to our guests through a warm and welcoming bakery café experience that delivers joy to everyone.                    </p>
-                </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row items-center justify-center mx-auto bg-white py-10 px-4 lg:px-20">
-                <div className="content w-full lg:w-1/2 h-96 flex flex-col bg-third items-center lg:items-start text-center lg:text-left justify-center bg-beige p-8 shadow-xl">
-                    <h2 className="text-4xl lg:text-5xl font-bold text-blue-950 mb-4">Masters at Work</h2>
-                    <p className="text-lg text-gray-700">
-                        On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations. On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations.
-                    </p>
-                </div>
-                <div className="relative flex w-full lg:w-2/5 justify-center items-center">
-                    <img src={ProductCook} className="w-full h-96 shadow-xl object-cover" alt="Cake" />
-                </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row items-center shadow-xl bg-gradient-to-b bg-white h-24 w-full justify-center mx-auto py-10 px-4 lg:px-20">
-
-            </div>
-
-
-            <div className="flex flex-col lg:flex-row items-center shadow-xl bg-gradient-to-b from-third to-sixth h-96 w-full justify-center mx-auto py-10 px-4 lg:px-20">
-                <div className="flex flex-col lg:flex-row items-center justify-centerpy-10 px-4 lg:px-20">
+                <div className="flex flex-col lg:flex-row items-center justify-center bg-white py-10 px-4 lg:px-8">
                     <div className="relative flex-row w-full lg:w-1/2 justify-center items-center"
                         data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom"
                         data-aos-duration="2000">
                         <p className="text-2xl text-blue-950 text-left animate-typing font-['Open_Sans'] font-semibold overflow-hidden">Our Mission</p>
                         <p className="text-4xl pt-3 text-blue-950 text-left">
-                            To bring expertly crafted baked and brewed goods to our guests through a warm and welcoming bakery café experience that delivers joy to everyone.
-                        </p>
+                            To bring expertly crafted baked and brewed goods to our guests through a warm and welcoming bakery café experience that delivers joy to everyone.                    </p>
                     </div>
                 </div>
-            </div>
-            <button
-                onClick={scrollToTop}
-                className="fixed bottom-10 right-10 bg-primary text-white rounded-full p-3 shadow-lg hover:bg-blue-950 focus:outline-none"
-            >
-                <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
-            </button>
-            <FooterPage />
 
+                <div className="flex flex-col lg:flex-row items-center justify-center mx-auto bg-white py-10 px-4 lg:px-20">
+                    <div className="content w-full lg:w-1/2 h-96 flex flex-col bg-third items-center lg:items-start text-center lg:text-left justify-center bg-beige p-8 shadow-xl">
+                        <h2 className="text-4xl lg:text-5xl font-bold text-blue-950 mb-4">Masters at Work</h2>
+                        <p className="text-lg text-gray-700">
+                            On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations. On every level, we strive to do our best to deliver the very best to you. Our certified bakers, cakers, and baristas are brimming with talent and eager to share their perfectly crafted creations.
+                        </p>
+                    </div>
+                    <div className="relative flex w-full lg:w-2/5 justify-center items-center">
+                        <img src={ProductCook} className="w-full h-96 shadow-xl object-cover" alt="Cake" />
+                    </div>
+                </div>
+
+                <div className="flex flex-col lg:flex-row items-center shadow-xl bg-gradient-to-b bg-white h-24 w-full justify-center mx-auto py-10 px-4 lg:px-20">
+
+                </div>
+
+                <div className="flex flex-col lg:flex-row items-center shadow-xl bg-gradient-to-b from-third to-sixth h-96 w-full justify-center mx-auto py-10 px-4 lg:px-20">
+                    <div className="flex flex-col lg:flex-row items-center justify-centerpy-10 px-4 lg:px-20">
+                        <div className="relative flex-row w-full lg:w-1/2 justify-center items-center"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
+                            <p className="text-2xl text-blue-950 text-left animate-typing font-['Open_Sans'] font-semibold overflow-hidden">Our Mission</p>
+                            <p className="text-4xl pt-3 text-blue-950 text-left">
+                                To bring expertly crafted baked and brewed goods to our guests through a warm and welcoming bakery café experience that delivers joy to everyone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-10 right-10 bg-primary text-white rounded-full p-3 shadow-lg hover:bg-blue-950 focus:outline-none"
+                >
+                    <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
+                </button>
+                <div className="covers bg-sixth h-32 lg:h-5 w-full">
+                </div>
+                <FooterPage />
+            </div>
 
         </>
     )

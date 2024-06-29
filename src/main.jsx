@@ -15,6 +15,8 @@ import LoginPage from "./assets/Pages/ComponentPage/LoginPage.jsx";
 import Registerpage from "./assets/Pages/ComponentPage/RegisterPage.jsx";
 import Cakepage from "./assets/Pages/Admin/Katalog/Cake.jsx"
 import Bakerypage from "./assets/Pages/Admin/Katalog/Bakery.jsx";
+import Pastrypage from "./assets/Pages/Admin/Katalog/Pastry.jsx";
+import Donutpage from "./assets/Pages/Admin/Katalog/Donut.jsx";
 
 //untuk routing pindah halaman (path harus sama dengan path di router)
 const router = createBrowserRouter([
@@ -49,6 +51,12 @@ const router = createBrowserRouter([
       },{
         path: "/menu/bakery",
         element: <Bakerypage />
+      },{
+        path: "/menu/pastry",
+        element: <Pastrypage />
+      },{
+        path: "/menu/donut",
+        element: <Donutpage />
       },
     ]
   },

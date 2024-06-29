@@ -31,7 +31,7 @@ export default function ProfileCompany() {
                 <div className="flex items-center justify-center h-screen">
                     <div className="flex-row items-center justify-center">
                         <h1 className="animate-typing2 font-['Open_Sans'] p-4 overflow-hidden text-4xl text-gray-500 text-center" style={{ width: 'fit-content' }}>
-                            Find Location
+                            Find Your Location
                         </h1>
                         <p className="text-lg text-center items-center text-gray-700 pt-5">We are trying to find the nearest store to your location.</p>
 
@@ -90,6 +90,8 @@ export default function ProfileCompany() {
             >
                 <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
             </button>
+            <div className="covers bg-sixth h-32 lg:h-5 w-full">
+            </div>
             <FooterPage />
         </>
     )

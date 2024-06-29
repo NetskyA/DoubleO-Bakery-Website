@@ -20,8 +20,6 @@ export default function Landingpage() {
     }, []);
     //Animasi Aos ===================
 
-
-
     return (
         <>
             <nav className="cover h-28 bg-black">
@@ -43,7 +41,7 @@ export default function Landingpage() {
                         </svg>
                     </button>
                     <>
-                        <div className={`w-full md:block md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-default" style={{ marginTop: "1.6%" }}>
+                        <div className={`w-full md:block md:w-auto rounded-tl-RoundedSF2 rounded-br-RoundedSF2 ${isOpen ? 'block' : 'hidden'}`} id="navbar-default" style={{ marginTop: "1.6%" }}>
                             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                                 <li>
                                     <a href="/" onClick={() => navigate("/")} className="block py-2 px-3 font-semibold font-['Open_Sans'] text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-900 dark:hover:text-primary md:dark:hover:bg-transparent hover:underline hover:underline-offset-4 hover:decoration-primary transform transition-transform duration-500 hover:scale-100">Menu</a>

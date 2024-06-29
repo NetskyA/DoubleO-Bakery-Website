@@ -14,7 +14,7 @@ export default function FooterPage() {
 
                         <div className="mt-6 lg:max-w-sm">
                             <p className="text-sm text-gray-800">
-                                Temukan kelezatan terbaik hanya di Double O Bakery! Dari roti, pastry, hingga donat, semuanya tersedia dengan harga paling terjangkau. 🍞🥐🍰 Belanja roti paling murah cuma di Double O Bakery Magetan! 🎉
+                                Temukan kelezatan terbaik hanya di Double O Bakery! Dari roti, pastry, hingga donat, semuanya tersedia dengan harga paling terjangkau. 🍞🥐🍰 Belanja roti paling murah cuma di Double O Bakery! 🎉
                             </p>
                         </div>
                     </div>

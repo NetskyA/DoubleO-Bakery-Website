@@ -148,6 +148,8 @@ export default function Bakery() {
             >
                 <img src={Arrowup} alt="Scroll to top" className="w-6 h-6" />
             </button>
+            <div className="covers bg-sixth h-32 lg:h-5 w-full">
+            </div>
             <FooterPage />
         </>
     )
