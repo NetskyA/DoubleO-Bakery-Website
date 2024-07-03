@@ -410,6 +410,8 @@ export default function MenuPage() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* donut */}
                         <div className=" top-0 h-full flex flex-col items-center justify-center text-black" data-aos="fade-up">
                             <div className="flex-row w-full justify-center overflow-hidden overflow-x-auto shadow-2xl bg-third">
                                 <p className="text-5xl lg:text-8xl m-3 text-center lg:m-8 pt-5 lg:pt-0 font-semibold text-blue-950" data-aos="fade-right">
@@ -430,11 +432,11 @@ export default function MenuPage() {
                                                                     alt={item.alt}
                                                                 />
                                                             </div>
-                                                            <div className="absolute top-0 lg:right-0 mt-1 lg:mt-2" onClick={() => navigate("/menu/donut")}>
+                                                            <div className="absolute top-0 lg:right-2 md:right-4 lg:mt-2" onClick={() => navigate("/menu/donut")}>
                                                                 <img
                                                                     src={LogoPromo}
                                                                     alt="See Menu"
-                                                                    className="w-20 lg:w-24 transform transition-transform duration-500 hover:scale-110 cursor-pointer"
+                                                                    className="w-32 lg:w-28 transform transition-transform duration-500 hover:scale-110 cursor-pointer"
                                                                 />
                                                             </div>
                                                             <div className="flex justify-center w-full">

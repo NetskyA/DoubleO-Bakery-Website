@@ -10,7 +10,7 @@ import FooterPage from "../../ComponentPage/Footer";
 
 const ProductCard = ({ image, title, description, price }) => (
     <div className="flex items-center space-x-4 p-4 bg-white bg-opacity-75 rounded-lg shadow-lg">
-        <div className="w-32 h-32 flex-shrink-0">
+        <div className="w-24 h-24 lg:w-32 lg:h-32 flex-shrink-0">
             <img src={image} alt={title} className="w-full h-full object-cover rounded-full" />
         </div>
         <div className="flex flex-col">
@@ -199,7 +199,7 @@ export default function Donut() {
                                 ))}
                             </div>
                             <div className="flex justify-center items-center" onClick={toggleVisibility}>
-                                <a href="#alldonut" className="text-center underline cursor-pointer hover:text-primary text-blue-950 font-['Open_Sans'] text-lg p-5">
+                                <a href="#alldonut" className="text-center underline cursor-pointer hover:text-primary text-blue-950 font-['Open_Sans'] text-sm lg:text-lg p-5">
                                     {isVisible ? 'Close' : 'Show'}
                                 </a>
                             </div>
